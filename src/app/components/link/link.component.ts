@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QRDataService } from "../../services/qrdata.service";
 
 @Component({
   selector: 'app-link',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./link.component.css']
 })
 export class LinkComponent implements OnInit {
+  urlData:string;
 
-  constructor() { }
+  constructor(private dataservice:QRDataService) { }
 
   ngOnInit(): void {
+  }
+
+  save(){
+    this.dataservice.setData(this.urlData);
   }
 
 }

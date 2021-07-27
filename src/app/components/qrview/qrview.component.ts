@@ -12,7 +12,7 @@ export class QrviewComponent implements OnInit {
   qrCode:QRCodeStyling;
   @ViewChild('canvas', { static: true }) canvas: ElementRef;
 
-  constructor(private dataservice: QRDataService) {
+  constructor(private dataservice:QRDataService) {
     this.qrCode = new QRCodeStyling(this.dataservice.getQRData());
   }
 
