@@ -1,10 +1,10 @@
 {
   "name": "qr-generator",
-  "version": "0.0.0",
+  "version": "0.1.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
