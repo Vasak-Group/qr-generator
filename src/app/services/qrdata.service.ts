@@ -5,11 +5,11 @@ import { Injectable } from '@angular/core';
 })
 export class QRDataService {
   qrData = {
-      width: 300,
-      height: 300,
+      width: 200,
+      height: 200,
       type: 'svg',
-      data: "https://www.facebook.com/",
-      image: "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
+      data: "https://qrgenerator.lynx.net.ar/",
+      image: "",
       margin: 10,
       qrOptions: {
         typeNumber: 0,
@@ -23,7 +23,7 @@ export class QRDataService {
         crossOrigin: 'anonymous',
       },
       dotsOptions: {
-        color: "#4267b2",
+        color: "#71C608",
         // gradient: {
         //   type: 'linear', // 'radial'
         //   rotation: 0,
@@ -32,7 +32,7 @@ export class QRDataService {
         type: 'rounded'
       },
       backgroundOptions: {
-        color: '#e9ebee',
+        color: 'rgba(255,255,255,0.6)',
         // gradient: {
         //   type: 'linear', // 'radial'
         //   rotation: 0,
@@ -40,7 +40,7 @@ export class QRDataService {
         // },
       },
       cornersSquareOptions: {
-        color: '#BD022D',
+        color: '#71C608',
         type: 'extra-rounded',
         // gradient: {
         //   type: 'linear', // 'radial'
@@ -49,7 +49,7 @@ export class QRDataService {
         // },
       },
       cornersDotOptions: {
-        color: '#BD022D',
+        color: '#71C608',
         type: 'dot',
         // gradient: {
         //   type: 'linear', // 'radial'
