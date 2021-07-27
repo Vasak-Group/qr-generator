@@ -1,0 +1,17 @@
+image: node:latest
+
+cache:
+    paths:
+        - node_modules/
+
+pages:
+  script:
+  - npm install -g @angular/cli
+  - npm install
+  - npm run build --prod
+  - mv dist/qr-generator public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
