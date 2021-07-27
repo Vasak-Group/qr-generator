@@ -25,8 +25,7 @@ export class QrviewComponent implements OnInit {
   }
 
   update():void{
-    this.qrCode = new QRCodeStyling(this.dataservice.getQRData());
-    this.qrCode.append(this.canvas.nativeElement);
+    this.qrCode.update(this.dataservice.getQRData());
   }
 
 }
