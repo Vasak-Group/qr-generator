@@ -8,7 +8,7 @@ pages:
   script:
   - npm install -g @angular/cli
   - npm install
-  - npm run build --prod
+  - npm run build
   - mv dist/qr-generator public
   artifacts:
     paths:
