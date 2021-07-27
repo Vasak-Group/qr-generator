@@ -22,3 +22,9 @@ body{
 h1,h2,h3,h4,h5,h6,a{
   color: var(--site-color);
 }
+
+.form-control{
+	border: 0px solid #ced4da;
+	border-bottom: 2px solid var(--site-color);
+	border-radius: 0px !important;
+}
