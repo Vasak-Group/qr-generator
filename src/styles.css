@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+	--site-blur: blur(6px);
+	--site-radius: 4px;
+  --site-background: #FFFFFF;
+	--site-color: #71C608;
+	--site-text-color: #3A3732;
+}
+
+#particles-js{
+  position: fixed;
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  color: var(--site-text-color);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,a{
+  color: var(--site-color);
+}
