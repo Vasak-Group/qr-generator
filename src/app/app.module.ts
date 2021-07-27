@@ -7,6 +7,7 @@ import { TopbarComponent } from './partials/topbar/topbar.component';
 import { FooterComponent } from './partials/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LinkComponent } from './components/link/link.component';
+import { QrviewComponent } from './components/qrview/qrview.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { LinkComponent } from './components/link/link.component';
     TopbarComponent,
     FooterComponent,
     HomeComponent,
-    LinkComponent
+    LinkComponent,
+    QrviewComponent
   ],
   imports: [
     BrowserModule,
