@@ -8,6 +8,7 @@ import { FooterComponent } from './partials/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LinkComponent } from './components/link/link.component';
 import { QrviewComponent } from './components/qrview/qrview.component';
+import { QrdataComponent } from './components/qrdata/qrdata.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { QrviewComponent } from './components/qrview/qrview.component';
     FooterComponent,
     HomeComponent,
     LinkComponent,
-    QrviewComponent
+    QrviewComponent,
+    QrdataComponent
   ],
   imports: [
     BrowserModule,
