@@ -20,11 +20,25 @@ export class DotconfigComponent implements OnInit {
 
   save(){
     if(this.isDegrade){
-      console.log(this.colorP);
-      console.log(this.colorD);
-      console.log(this.typeDegrade);
+      this.dataservice.setDotsColor(
+        {
+          color: this.colorP,
+          gradient: {
+            type: this.typeDegrade,
+            rotation: 0,
+            colorStops: [{ offset: 0, color: this.colorP }, { offset: 1, color: this.colorD }]
+          },
+          type: 'rounded'
+        }
+      );
     }else{
-      console.log(this.colorP);
+      this.dataservice.setDotsColor(
+        {
+          color: this.colorP,
+          type: 'rounded'
+        }
+      );
+
     }
   }
 
