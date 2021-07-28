@@ -1,0 +1,59 @@
+<div class="col-12 dotconfig">
+  <h3 class="text-center"><i class="fa fa-circle" aria-hidden="true"></i> Puntos del QR</h3>
+  <div style="height: 22px;"></div>
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-6">
+        Degrade:
+      </div>
+      <div class="col-6">
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            [(ngModel)]="isDegrade"
+            (change)="save()"
+            id="flexSwitchCheckDefault" />
+        </div>
+      </div>
+
+      <div class="col-12" style="height: 20px;" *ngIf="isDegrade"></div>
+
+      <div class="col-12" *ngIf="isDegrade">
+        <select class="form-select" (change)="save()" [(ngModel)]="typeDegrade" aria-label="Default select example">
+          <option value="lineal" selected>Lineal</option>
+          <option value="radial">Circular</option>
+        </select>
+      </div>
+
+      <div class="col-12" style="height: 20px;"></div>
+
+      <div class="col-6">
+        <label for="colorPrimary" class="form-label" *ngIf="!isDegrade">Color</label>
+        <label for="colorPrimary" class="form-label" *ngIf="isDegrade">Color Inicial</label>
+        <input
+          type="color"
+          class="form-control form-control-color"
+          id="colorPrimary"
+          [(ngModel)]="colorP"
+          (change)="save()"
+          value="#71C608"
+          title="Elige el color principal" />
+      </div>
+
+      <div class="col-6" *ngIf="isDegrade">
+        <label for="colorDegrade" class="form-label">Color Final</label>
+        <input
+          type="color"
+          class="form-control form-control-color"
+          id="colorDegrade"
+          [(ngModel)]="colorD"
+          (change)="save()"
+          value="#71C608"
+          title="Elige el color de degrade" />
+      </div>
+
+    </div>
+  </div>
+</div>

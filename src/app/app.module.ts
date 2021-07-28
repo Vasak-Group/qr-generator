@@ -10,7 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { LinkComponent } from './components/link/link.component';
 import { QrviewComponent } from './components/qrview/qrview.component';
 import { QrdataComponent } from './components/qrdata/qrdata.component';
-import { ColordataComponent } from './components/colordata/colordata.component';
+import { DotconfigComponent } from './components/dotconfig/dotconfig.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { ColordataComponent } from './components/colordata/colordata.component';
     LinkComponent,
     QrviewComponent,
     QrdataComponent,
-    ColordataComponent
+    DotconfigComponent
   ],
   imports: [
     BrowserModule,
