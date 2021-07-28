@@ -1,0 +1,9 @@
+.imageconfig{
+  background: var(--site-background);
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.comimg{
+  padding: 25px;
+}

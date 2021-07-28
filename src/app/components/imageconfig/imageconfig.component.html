@@ -1,1 +1,395 @@
-<p>imageconfig works!</p>
+<div class="col-12 imageconfig">
+  <h3 class="text-center"><i class="fa fa-picture-o" aria-hidden="true"></i> Imagen/Logo</h3>
+  <div style="height: 22px;"></div>
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-6">
+        Usar Imagen Propia
+      </div>
+      <div class="col-6">
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            [(ngModel)]="usarPropia"
+            id="flexSwitchCheckDefault" />
+        </div>
+      </div>
+
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/amazon.svg')"
+          id="classy" />
+        <label class="form-check-label" for="amazon">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/amazon.svg"
+            height="500"
+            width="500"
+            alt="amazon"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/bitcoin.svg')"
+          id="classy" />
+        <label class="form-check-label" for="bitcoin">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/bitcoin.svg"
+            height="500"
+            width="500"
+            alt="bitcoin"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/facebook.svg')"
+          id="classy" />
+        <label class="form-check-label" for="facebook">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/facebook.svg"
+            height="500"
+            width="500"
+            alt="facebook"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/flickr.svg')"
+          id="classy" />
+        <label class="form-check-label" for="flickr">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/flickr.svg"
+            height="500"
+            width="500"
+            alt="flickr"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/gmail.svg')"
+          id="classy" />
+        <label class="form-check-label" for="gmail">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/gmail.svg"
+            height="500"
+            width="500"
+            alt="gmail"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/instagram.svg')"
+          id="classy" />
+        <label class="form-check-label" for="instagram">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/instagram.svg"
+            height="500"
+            width="500"
+            alt="instagram"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/linkedin.svg')"
+          id="classy" />
+        <label class="form-check-label" for="linkedin">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/linkedin.svg"
+            height="500"
+            width="500"
+            alt="linkedin"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/paypal.svg')"
+          id="classy" />
+        <label class="form-check-label" for="paypal">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/paypal.svg"
+            height="500"
+            width="500"
+            alt="paypal"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/periscope.svg')"
+          id="classy" />
+        <label class="form-check-label" for="periscope">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/periscope.svg"
+            height="500"
+            width="500"
+            alt="periscope"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/pinterest.svg')"
+          id="classy" />
+        <label class="form-check-label" for="pinterest">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/pinterest.svg"
+            height="500"
+            width="500"
+            alt="pinterest"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/reddit.svg')"
+          id="classy" />
+        <label class="form-check-label" for="reddit">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/reddit.svg"
+            height="500"
+            width="500"
+            alt="reddit"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/skype.svg')"
+          id="classy" />
+        <label class="form-check-label" for="skype">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/skype.svg"
+            height="500"
+            width="500"
+            alt="skype"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/snapchat.svg')"
+          id="classy" />
+        <label class="form-check-label" for="snapchat">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/snapchat.svg"
+            height="500"
+            width="500"
+            alt="snapchat"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/soundcloud.svg')"
+          id="classy" />
+        <label class="form-check-label" for="soundcloud">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/soundcloud.svg"
+            height="500"
+            width="500"
+            alt="soundcloud"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/spotify.svg')"
+          id="classy" />
+        <label class="form-check-label" for="spotify">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/spotify.svg"
+            height="500"
+            width="500"
+            alt="spotify"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/telegram.svg')"
+          id="classy" />
+        <label class="form-check-label" for="telegram">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/telegram.svg"
+            height="500"
+            width="500"
+            alt="telegram"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/twitter.svg')"
+          id="classy" />
+        <label class="form-check-label" for="twitter">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/twitter.svg"
+            height="500"
+            width="500"
+            alt="twitter"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/vimeo.svg')"
+          id="classy" />
+        <label class="form-check-label" for="vimeo">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/vimeo.svg"
+            height="500"
+            width="500"
+            alt="vimeo"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/vine.svg')"
+          id="classy" />
+        <label class="form-check-label" for="vine">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/vine.svg"
+            height="500"
+            width="500"
+            alt="vine"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/whatsapp.svg')"
+          id="classy" />
+        <label class="form-check-label" for="whatsapp">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/whatsapp.svg"
+            height="500"
+            width="500"
+            alt="whatsapp"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/wifi.svg')"
+          id="classy" />
+        <label class="form-check-label" for="wifi">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/wifi.svg"
+            height="500"
+            width="500"
+            alt="wifi"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/wikipedia.svg')"
+          id="classy" />
+        <label class="form-check-label" for="wikipedia">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/wikipedia.svg"
+            height="500"
+            width="500"
+            alt="wikipedia"/>
+        </label>
+      </div>
+      <div class="form-check col-2 comimg" *ngIf="!usarPropia">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="imgQR"
+          (click)="change('/assets/img/social/youtube.svg')"
+          id="classy" />
+        <label class="form-check-label" for="youtube">
+          <img
+            class="img-fluid"
+            src="/assets/img/social/youtube.svg"
+            height="500"
+            width="500"
+            alt="youtube"/>
+        </label>
+      </div>
+
+      <div class="col-12 text-center" *ngIf="usarPropia">
+        Proximamente
+      </div>
+
+    </div>
+  </div>
+</div>
