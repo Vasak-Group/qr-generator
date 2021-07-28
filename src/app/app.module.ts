@@ -10,6 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { LinkComponent } from './components/link/link.component';
 import { QrviewComponent } from './components/qrview/qrview.component';
 import { QrdataComponent } from './components/qrdata/qrdata.component';
+import { ColordataComponent } from './components/colordata/colordata.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { QrdataComponent } from './components/qrdata/qrdata.component';
     HomeComponent,
     LinkComponent,
     QrviewComponent,
-    QrdataComponent
+    QrdataComponent,
+    ColordataComponent
   ],
   imports: [
     BrowserModule,
