@@ -11,6 +11,7 @@ import { LinkComponent } from './components/link/link.component';
 import { QrviewComponent } from './components/qrview/qrview.component';
 import { QrdataComponent } from './components/qrdata/qrdata.component';
 import { DotconfigComponent } from './components/dotconfig/dotconfig.component';
+import { CornerdotconfigComponent } from './components/cornerdotconfig/cornerdotconfig.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DotconfigComponent } from './components/dotconfig/dotconfig.component';
     LinkComponent,
     QrviewComponent,
     QrdataComponent,
-    DotconfigComponent
+    DotconfigComponent,
+    CornerdotconfigComponent
   ],
   imports: [
     BrowserModule,
