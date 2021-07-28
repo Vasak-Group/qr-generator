@@ -32,4 +32,12 @@ export class QrviewComponent implements OnInit {
     this.qrCode.download({ name: "lynx-qr", extension: "png" });
   }
 
+  downloadJPEG():void{
+    this.qrCode.download({ name: "lynx-qr", extension: "jpeg" });
+  }
+
+  downloadWEBP():void{
+    this.qrCode.download({ name: "lynx-qr", extension: "webp" });
+  }
+
 }
