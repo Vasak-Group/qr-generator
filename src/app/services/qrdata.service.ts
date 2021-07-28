@@ -90,4 +90,8 @@ export class QRDataService {
     this.qrData.cornersSquareOptions = objCorn;
   }
 
+  setCornersDot(objCorn:any):void{
+    this.qrData.cornersDotOptions = objCorn;
+  }
+
 }
