@@ -12,6 +12,7 @@ import { QrviewComponent } from './components/qrview/qrview.component';
 import { QrdataComponent } from './components/qrdata/qrdata.component';
 import { DotconfigComponent } from './components/dotconfig/dotconfig.component';
 import { CornerdotconfigComponent } from './components/cornerdotconfig/cornerdotconfig.component';
+import { CornerconfigComponent } from './components/cornerconfig/cornerconfig.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CornerdotconfigComponent } from './components/cornerdotconfig/cornerdot
     QrviewComponent,
     QrdataComponent,
     DotconfigComponent,
-    CornerdotconfigComponent
+    CornerdotconfigComponent,
+    CornerconfigComponent
   ],
   imports: [
     BrowserModule,
