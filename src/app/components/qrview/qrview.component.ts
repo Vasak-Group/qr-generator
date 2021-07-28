@@ -17,10 +17,6 @@ export class QrviewComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(QRCodeStyling);
-    if (!QRCodeStyling) {
-      return;
-    }
     this.qrCode.append(this.canvas.nativeElement);
   }
 
