@@ -24,4 +24,12 @@ export class QrviewComponent implements OnInit {
     this.qrCode.update(this.dataservice.getQRData());
   }
 
+  downloadSVG():void{
+    this.qrCode.download({ name: "lynx-qr", extension: "svg" });
+  }
+
+  downloadPNG():void{
+    this.qrCode.download({ name: "lynx-qr", extension: "png" });
+  }
+
 }
