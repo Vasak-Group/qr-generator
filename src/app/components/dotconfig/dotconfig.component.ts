@@ -13,6 +13,7 @@ export class DotconfigComponent implements OnInit {
   colorP:string = "#71C608";
   colorD:string = "#71C608";
   rotation:number = 0;
+  dotType:string = "rounded";
 
   constructor(private dataservice:QRDataService) { }
 
@@ -29,18 +30,23 @@ export class DotconfigComponent implements OnInit {
             rotation: this.rotation,
             colorStops: [{ offset: 0, color: this.colorP }, { offset: 1, color: this.colorD }]
           },
-          type: 'rounded'
+          type: this.dotType
         }
       );
     }else{
       this.dataservice.setDotsColor(
         {
           color: this.colorP,
-          type: 'rounded'
+          type: this.dotType
         }
       );
 
     }
+  }
+
+  setDot(strDot:string):void{
+    this.dotType = strDot;
+    this.save();
   }
 
 }
