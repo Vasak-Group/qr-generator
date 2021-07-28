@@ -27,6 +27,20 @@
         </select>
       </div>
 
+      <div class="col-12" style="height: 20px;" *ngIf="isDegrade"></div>
+
+      <div class="col-12" *ngIf="isDegrade">
+        <label for="rotation" class="form-label">Rotación</label>
+        <input
+          type="range"
+          class="form-range"
+          (change)="save()"
+          [(ngModel)]="rotation"
+          min="0"
+          max="180"
+          id="rotation" />
+      </div>
+
       <div class="col-12" style="height: 20px;"></div>
 
       <div class="col-6">

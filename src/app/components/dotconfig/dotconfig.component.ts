@@ -12,6 +12,7 @@ export class DotconfigComponent implements OnInit {
   typeDegrade:string = "lineal";
   colorP:string = "#71C608";
   colorD:string = "#71C608";
+  rotation:number = 0;
 
   constructor(private dataservice:QRDataService) { }
 
@@ -25,7 +26,7 @@ export class DotconfigComponent implements OnInit {
           color: this.colorP,
           gradient: {
             type: this.typeDegrade,
-            rotation: 0,
+            rotation: this.rotation,
             colorStops: [{ offset: 0, color: this.colorP }, { offset: 1, color: this.colorD }]
           },
           type: 'rounded'
