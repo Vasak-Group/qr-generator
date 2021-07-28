@@ -47,7 +47,7 @@ h1,h2,h3,h4,h5,h6,a{
 	border-radius: 0px;
 }
 
-.btn-primary{
+.btn-primary, .btn-primary:hover{
 	background: var(--site-color);
 	border: 1px solid var(--site-color);
 }
