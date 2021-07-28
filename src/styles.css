@@ -29,6 +29,16 @@ h1,h2,h3,h4,h5,h6,a{
 	border-radius: 0px !important;
 }
 
+.form-select{
+	border: 1px solid var(--site-color);
+	border-radius: 0px;
+}
+
+.form-check-input:checked {
+  background-color: var(--site-color);
+  border-color: var(--site-color);
+}
+
 .nav-link{
 	color: var(--site-color);
 }
