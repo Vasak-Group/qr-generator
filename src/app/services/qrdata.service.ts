@@ -82,8 +82,12 @@ export class QRDataService {
     this.qrData.width = intW;
   }
 
-  setDotsColor(objDots:any):void{
+  setDots(objDots:any):void{
     this.qrData.dotsOptions = objDots;
+  }
+
+  setCorners(objCorn:any):void{
+    this.qrData.cornersSquareOptions = objCorn;
   }
 
 }

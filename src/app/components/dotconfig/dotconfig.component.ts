@@ -22,7 +22,7 @@ export class DotconfigComponent implements OnInit {
 
   save(){
     if(this.isDegrade){
-      this.dataservice.setDotsColor(
+      this.dataservice.setDots(
         {
           color: this.colorP,
           gradient: {
@@ -34,7 +34,7 @@ export class DotconfigComponent implements OnInit {
         }
       );
     }else{
-      this.dataservice.setDotsColor(
+      this.dataservice.setDots(
         {
           color: this.colorP,
           type: this.dotType
