@@ -14,6 +14,7 @@ import { DotconfigComponent } from './components/dotconfig/dotconfig.component';
 import { CornerdotconfigComponent } from './components/cornerdotconfig/cornerdotconfig.component';
 import { CornerconfigComponent } from './components/cornerconfig/cornerconfig.component';
 import { ImageconfigComponent } from './components/imageconfig/imageconfig.component';
+import { WifiComponent } from './components/wifi/wifi.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ImageconfigComponent } from './components/imageconfig/imageconfig.compo
     DotconfigComponent,
     CornerdotconfigComponent,
     CornerconfigComponent,
-    ImageconfigComponent
+    ImageconfigComponent,
+    WifiComponent
   ],
   imports: [
     BrowserModule,
