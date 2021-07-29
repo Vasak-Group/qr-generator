@@ -12,6 +12,7 @@ export class ImageconfigComponent implements OnInit {
   imagen:string = "/assets/img/logo.svg";
   margin:number = 3;
   hideBack:boolean = true;
+  imagenURL:string = "";
 
   constructor(private dataservice:QRDataService) { }
 
@@ -21,6 +22,10 @@ export class ImageconfigComponent implements OnInit {
   change(strIMG:string):void{
     this.imagen = strIMG;
     this.save();
+  }
+
+  setIMGURL():void{
+    this.change(this.imagenURL);
   }
 
   save():void{

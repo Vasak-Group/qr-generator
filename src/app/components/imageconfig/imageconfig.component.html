@@ -17,7 +17,7 @@
         </div>
       </div>
 
-      <div class="col-12" style="height: 22px;"></div>
+      <div class="col-12" style="height: 32px;"></div>
 
       <div class="form-check col-2 comimg" *ngIf="!usarPropia">
         <input
@@ -389,7 +389,18 @@
       </div>
 
       <div class="col-12 text-center" *ngIf="usarPropia">
-        Proximamente
+        <div class="mb-3">
+          <label for="imgFile" class="form-label">
+            URL de su logo
+          </label>
+          <input
+            class="form-control"
+            type="text"
+            [(ngModel)]="imagenURL"
+            (change)="setIMGURL()"
+            id="imgFile"/>
+        </div>
+        <p>Recomendamos usar <a href="https://postimg.cc/" target="_blank">PostIMG</a> en caso de necesitar subir una imagen o en que la imagen que ingrese no se vea</p>
       </div>
 
       <div class="col-12" style="height: 22px;"></div>
