@@ -77,6 +77,10 @@ export class QRDataService {
     this.qrData.image = strImage;
   }
 
+  setImageOptions(objImage:any):void{
+    this.qrData.imageOptions = objImage;
+  }
+
   setSize(intH:number, intW:number):void{
     this.qrData.height = intH;
     this.qrData.width = intW;

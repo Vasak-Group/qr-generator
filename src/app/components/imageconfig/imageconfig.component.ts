@@ -9,7 +9,9 @@ import { QRDataService } from "../../services/qrdata.service";
 
 export class ImageconfigComponent implements OnInit {
   usarPropia:boolean = false;
-  imagen:string = "";
+  imagen:string = "/assets/img/logo.svg";
+  margin:number = 3;
+  hideBack:boolean = true;
 
   constructor(private dataservice:QRDataService) { }
 
@@ -23,6 +25,12 @@ export class ImageconfigComponent implements OnInit {
 
   save():void{
     this.dataservice.setImage(this.imagen);
+    this.dataservice.setImageOptions({
+      hideBackgroundDots: this.hideBack,
+      imageSize: 0.4,
+      margin: this.margin,
+      crossOrigin: 'anonymous',
+    })
   }
 
 }
