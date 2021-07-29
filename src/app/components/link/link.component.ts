@@ -6,6 +6,7 @@ import { QRDataService } from "../../services/qrdata.service";
   templateUrl: './link.component.html',
   styleUrls: ['./link.component.css']
 })
+
 export class LinkComponent implements OnInit {
   urlData:string;
 
