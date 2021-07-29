@@ -9,7 +9,7 @@ export class QRDataService {
       height: 200,
       type: 'svg',
       data: "https://qrgenerator.lynx.net.ar/",
-      image: "",
+      image: "/assets/img/logo.svg",
       margin: 10,
       qrOptions: {
         typeNumber: 0,
@@ -19,7 +19,7 @@ export class QRDataService {
       imageOptions: {
         hideBackgroundDots: true,
         imageSize: 0.4,
-        margin: 20,
+        margin: 3,
         crossOrigin: 'anonymous',
       },
       dotsOptions: {
