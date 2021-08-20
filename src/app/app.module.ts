@@ -15,6 +15,7 @@ import { CornerdotconfigComponent } from './components/cornerdotconfig/cornerdot
 import { CornerconfigComponent } from './components/cornerconfig/cornerconfig.component';
 import { ImageconfigComponent } from './components/imageconfig/imageconfig.component';
 import { WifiComponent } from './components/wifi/wifi.component';
+import { PlaystoreComponent } from './components/playstore/playstore.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { WifiComponent } from './components/wifi/wifi.component';
     CornerdotconfigComponent,
     CornerconfigComponent,
     ImageconfigComponent,
-    WifiComponent
+    WifiComponent,
+    PlaystoreComponent
   ],
   imports: [
     BrowserModule,
