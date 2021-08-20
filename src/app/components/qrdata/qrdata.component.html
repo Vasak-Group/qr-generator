@@ -26,6 +26,18 @@
       WiFi
     </button>
   </li>
+  <li class="nav-item" role="presentation">
+    <button
+    class="nav-link"
+    id="wifi-tab"
+    data-bs-toggle="tab"
+    data-bs-target="#playstore"
+    type="button" role="tab"
+    aria-controls="playstore"
+    aria-selected="false">
+      PlayStore ID
+    </button>
+  </li>
   </ul>
   <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="url" role="tabpanel" aria-labelledby="url-tab">
@@ -33,6 +45,9 @@
     </div>
     <div class="tab-pane fade" id="wifi" role="tabpanel" aria-labelledby="wifi-tab">
       <app-wifi></app-wifi>
+    </div>
+    <div class="tab-pane fade" id="playstore" role="tabpanel" aria-labelledby="playstore-tab">
+      <app-playstore></app-playstore>
     </div>
   </div>
 </div>
