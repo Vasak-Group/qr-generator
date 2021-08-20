@@ -10,6 +10,7 @@ import QRCodeStyling from 'qr-code-styling';
 
 export class QrviewComponent implements OnInit {
   qrCode:QRCodeStyling;
+  typeFile:any = "png";
   @ViewChild('canvas', { static: true }) canvas: ElementRef;
 
   constructor(private dataservice:QRDataService) {
@@ -24,20 +25,8 @@ export class QrviewComponent implements OnInit {
     this.qrCode.update(this.dataservice.getQRData());
   }
 
-  downloadSVG():void{
-    this.qrCode.download({ name: "lynx-qr", extension: "svg" });
-  }
-
-  downloadPNG():void{
-    this.qrCode.download({ name: "lynx-qr", extension: "png" });
-  }
-
-  downloadJPEG():void{
-    this.qrCode.download({ name: "lynx-qr", extension: "jpeg" });
-  }
-
-  downloadWEBP():void{
-    this.qrCode.download({ name: "lynx-qr", extension: "webp" });
+  download():void{
+    this.qrCode.download({ name: "lynx-qr", extension: this.typeFile });
   }
 
 }

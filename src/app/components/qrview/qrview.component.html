@@ -9,18 +9,27 @@
   <div style="height: 32px;"></div>
   <h3 class="text-center">Descargar</h3>
   <div style="height: 12px;"></div>
-  <div class="d-grid gap-2">
-    <button class="btn btn-primary" type="button" (click)="downloadSVG()">
-      Descargar SVG
-    </button>
-    <button class="btn btn-primary" type="button" (click)="downloadPNG()">
-      Descargar PNG
-    </button>
-    <button class="btn btn-primary" type="button" (click)="downloadJPEG()">
-      Descargar JEPG
-    </button>
-    <button class="btn btn-primary" type="button" (click)="downloadWEBP()">
-      Descargar WEBP
-    </button>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-8">
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary" type="button" (click)="download()">
+            Descargar
+          </button>
+        </div>
+      </div>
+      <div class="col-4">
+        <select
+          class="form-select"
+          [(ngModel)]="typeFile"
+          aria-label="Tipo de Contraseña">
+          <option value="png" active>PNG</option>
+          <option value="svg">SVG</option>
+          <option value="webp">WEBP</option>
+          <option value="jpeg">JPEG</option>
+        </select>
+      </div>
+    </div>
   </div>
+
 </div>
