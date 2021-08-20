@@ -19,8 +19,7 @@ export class WifiComponent implements OnInit {
   }
 
   save(){
-    let ret = "WIFI:T:".concat(this.typePass).concat(";S:").concat(this.name).concat(";P:").concat(this.pass).concat(";H:").concat(this.isHidden.toString()).concat(";;")
-    console.log(ret)
+    this.dataservice.setData("WIFI:T:".concat(this.typePass).concat(";S:").concat(this.name).concat(";P:").concat(this.pass).concat(";H:").concat(this.isHidden.toString()).concat(";;"))
   }
 
 }
