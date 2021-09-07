@@ -19,7 +19,7 @@ export class WifiComponent implements OnInit {
   }
 
   save(){
-    this.dataservice.setData("WIFI:T:".concat(this.typePass).concat(";S:").concat(this.name).concat(";P:").concat(this.pass).concat(";H:").concat(this.isHidden.toString()).concat(";;"))
+    this.dataservice.setData(`WIFI:T:${this.typePass};S:${this.name};P:${this.pass};H:${this.isHidden.toString()};;`)
   }
 
 }
