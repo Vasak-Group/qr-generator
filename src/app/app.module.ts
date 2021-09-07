@@ -17,6 +17,7 @@ import { ImageconfigComponent } from './components/imageconfig/imageconfig.compo
 import { WifiComponent } from './components/wifi/wifi.component';
 import { PlaystoreComponent } from './components/playstore/playstore.component';
 import { MailComponent } from './components/mail/mail.component';
+import { TelComponent } from './components/tel/tel.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { MailComponent } from './components/mail/mail.component';
     ImageconfigComponent,
     WifiComponent,
     PlaystoreComponent,
-    MailComponent
+    MailComponent,
+    TelComponent
   ],
   imports: [
     BrowserModule,
