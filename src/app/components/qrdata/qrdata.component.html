@@ -12,32 +12,44 @@
       aria-controls="url"
       aria-selected="true">
       URL
-    </button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button
-    class="nav-link"
-    id="wifi-tab"
-    data-bs-toggle="tab"
-    data-bs-target="#wifi"
-    type="button" role="tab"
-    aria-controls="wifi"
-    aria-selected="false">
-      WiFi
-    </button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button
-    class="nav-link"
-    id="wifi-tab"
-    data-bs-toggle="tab"
-    data-bs-target="#playstore"
-    type="button" role="tab"
-    aria-controls="playstore"
-    aria-selected="false">
-      PlayStore ID
-    </button>
-  </li>
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+      class="nav-link"
+      id="wifi-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#wifi"
+      type="button" role="tab"
+      aria-controls="wifi"
+      aria-selected="false">
+        WiFi
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+      class="nav-link"
+      id="playstore-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#playstore"
+      type="button" role="tab"
+      aria-controls="playstore"
+      aria-selected="false">
+        PlayStore ID
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+      class="nav-link"
+      id="sms-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#sms"
+      type="button" role="tab"
+      aria-controls="sms"
+      aria-selected="false">
+        SMS
+      </button>
+    </li>
   </ul>
   <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="url" role="tabpanel" aria-labelledby="url-tab">
@@ -48,6 +60,9 @@
     </div>
     <div class="tab-pane fade" id="playstore" role="tabpanel" aria-labelledby="playstore-tab">
       <app-playstore></app-playstore>
+    </div>
+    <div class="tab-pane fade" id="sms" role="tabpanel" aria-labelledby="sms-tab">
+      <app-sms></app-sms>
     </div>
   </div>
 </div>

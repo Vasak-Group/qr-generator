@@ -1,1 +1,12 @@
-<p>sms works!</p>
+<div class="col-12">
+  <div class="input-group mb-3">
+    <input
+      type="number"
+      class="form-control"
+      placeholder="+54 9 11 60109950"
+      aria-label="+54 9 11 60109950"
+      [(ngModel)]="telData"
+      (change)="save()"
+      maxlength="2083" />
+  </div>
+</div>
