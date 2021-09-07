@@ -18,6 +18,7 @@ import { WifiComponent } from './components/wifi/wifi.component';
 import { PlaystoreComponent } from './components/playstore/playstore.component';
 import { MailComponent } from './components/mail/mail.component';
 import { TelComponent } from './components/tel/tel.component';
+import { SmsComponent } from './components/sms/sms.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { TelComponent } from './components/tel/tel.component';
     WifiComponent,
     PlaystoreComponent,
     MailComponent,
-    TelComponent
+    TelComponent,
+    SmsComponent
   ],
   imports: [
     BrowserModule,
