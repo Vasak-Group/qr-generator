@@ -50,6 +50,18 @@
         SMS
       </button>
     </li>
+    <li class="nav-item" role="presentation">
+      <button
+      class="nav-link"
+      id="tel-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#tel"
+      type="button" role="tab"
+      aria-controls="tel"
+      aria-selected="false">
+        Teléfono
+      </button>
+    </li>
   </ul>
   <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="url" role="tabpanel" aria-labelledby="url-tab">
@@ -63,6 +75,9 @@
     </div>
     <div class="tab-pane fade" id="sms" role="tabpanel" aria-labelledby="sms-tab">
       <app-sms></app-sms>
+    </div>
+    <div class="tab-pane fade" id="tel" role="tabpanel" aria-labelledby="tel-tab">
+      <app-tel></app-tel>
     </div>
   </div>
 </div>

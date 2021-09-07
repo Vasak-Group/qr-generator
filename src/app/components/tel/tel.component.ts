@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QRDataService } from "../../services/qrdata.service";
 
 @Component({
   selector: 'app-tel',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tel.component.css']
 })
 export class TelComponent implements OnInit {
+  telData:number;
 
-  constructor() { }
+  constructor(private dataservice:QRDataService) { }
 
   ngOnInit(): void {
+  }
+
+  save(){
+    this.dataservice.setData(`tel:${this.telData}`);
   }
 
 }
