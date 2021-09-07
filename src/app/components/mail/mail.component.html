@@ -1,1 +1,12 @@
-<p>mail works!</p>
+<div class="col-12">
+  <div class="input-group mb-3">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="lynx.software.design@gmail.com"
+      aria-label="lynx.software.design@gmail.com"
+      [(ngModel)]="mailData"
+      (change)="save()"
+      maxlength="2083" />
+  </div>
+</div>

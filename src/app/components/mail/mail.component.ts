@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { QRDataService } from "../../services/qrdata.service";
 
 @Component({
   selector: 'app-mail',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mail.component.css']
 })
 export class MailComponent implements OnInit {
+  mailData:string;
 
-  constructor() { }
+  constructor(private dataservice:QRDataService) { }
 
   ngOnInit(): void {
+  }
+
+  save(){
+    this.dataservice.setData(`mailto:${this.mailData}`);
   }
 
 }

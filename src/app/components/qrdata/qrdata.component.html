@@ -62,6 +62,18 @@
         Teléfono
       </button>
     </li>
+    <li class="nav-item" role="presentation">
+      <button
+      class="nav-link"
+      id="mail-tab"
+      data-bs-toggle="tab"
+      data-bs-target="#mail"
+      type="button" role="tab"
+      aria-controls="mail"
+      aria-selected="false">
+        Mail
+      </button>
+    </li>
   </ul>
   <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="url" role="tabpanel" aria-labelledby="url-tab">
@@ -78,6 +90,9 @@
     </div>
     <div class="tab-pane fade" id="tel" role="tabpanel" aria-labelledby="tel-tab">
       <app-tel></app-tel>
+    </div>
+    <div class="tab-pane fade" id="mail" role="tabpanel" aria-labelledby="mail-tab">
+      <app-mail></app-mail>
     </div>
   </div>
 </div>
