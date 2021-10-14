@@ -11,6 +11,8 @@ import QRCodeStyling from 'qr-code-styling';
 export class QrviewComponent implements OnInit {
   qrCode:QRCodeStyling;
   typeFile:any = "png";
+  x:number = 200;
+  y:number = 200;
   @ViewChild('canvas', { static: true }) canvas: ElementRef;
 
   constructor(private dataservice:QRDataService) {
@@ -26,7 +28,11 @@ export class QrviewComponent implements OnInit {
   }
 
   download():void{
+    this.dataservice.setSize(this.x, this.y);
+    this.update();
     this.qrCode.download({ name: "lynx-qr", extension: this.typeFile });
+    this.dataservice.setSize(200,200);
+    this.update();
   }
 
 }

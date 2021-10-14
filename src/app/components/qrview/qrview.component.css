@@ -1,3 +1,7 @@
 .qrview{
   top: 75px;
 }
+
+.form-control{
+  padding: 0px;
+}
