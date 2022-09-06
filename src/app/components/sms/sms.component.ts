@@ -7,14 +7,14 @@ import { QRDataService } from "../../services/qrdata.service";
   styleUrls: ['./sms.component.css']
 })
 export class SmsComponent implements OnInit {
-  telData:number;
+  telData: number;
 
-  constructor(private dataservice:QRDataService) { }
+  constructor(private dataservice: QRDataService) { }
 
   ngOnInit(): void {
   }
 
-  save(){
+  save() {
     this.dataservice.setData(`sms:${this.telData}`);
   }
 
