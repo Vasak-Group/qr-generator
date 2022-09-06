@@ -5,88 +5,41 @@
     <div class="row">
 
       <div class="form-check col-3 col-lg-2">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="typeDots"
-          (click)="setDot('classy')"
-          id="classy" />
+        <input class="form-check-input" type="radio" name="typeDots" (click)="setDot('classy')" id="classy" />
         <label class="form-check-label" for="classy">
-          <img
-            class="img-fluid"
-            src="/assets/img/dots/classy.png"
-            alt="classy"/>
+          <img class="img-fluid" src="/assets/img/dots/classy.png" alt="classy" />
         </label>
       </div>
       <div class="form-check col-3 col-lg-2">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="typeDots"
-          (click)="setDot('classy-rounded')"
+        <input class="form-check-input" type="radio" name="typeDots" (click)="setDot('classy-rounded')"
           id="classy-rounded" />
         <label class="form-check-label" for="classy-rounded">
-          <img
-            class="img-fluid"
-            src="/assets/img/dots/classy-rounded.png"
-            alt="classy-rounded"/>
+          <img class="img-fluid" src="/assets/img/dots/classy-rounded.png" alt="classy-rounded" />
         </label>
       </div>
       <div class="form-check col-3 col-lg-2">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="typeDots"
-          (click)="setDot('dots')"
-          id="dots" />
+        <input class="form-check-input" type="radio" name="typeDots" (click)="setDot('dots')" id="dots" />
         <label class="form-check-label" for="dots">
-          <img
-            class="img-fluid"
-            src="/assets/img/dots/dots.png"
-            alt="dots"/>
+          <img class="img-fluid" src="/assets/img/dots/dots.png" alt="dots" />
         </label>
       </div>
       <div class="form-check col-3 col-lg-2">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="typeDots"
-          (click)="setDot('extra-rounded')"
+        <input class="form-check-input" type="radio" name="typeDots" (click)="setDot('extra-rounded')"
           id="extra-rounded" />
         <label class="form-check-label" for="extra-rounded">
-          <img
-            class="img-fluid"
-            src="/assets/img/dots/extra-rounded.png"
-            alt="extra-rounded"/>
+          <img class="img-fluid" src="/assets/img/dots/extra-rounded.png" alt="extra-rounded" />
         </label>
       </div>
       <div class="form-check col-3 col-lg-2">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="typeDots"
-          (click)="setDot('rounded')"
-          id="rounded"
-          checked />
+        <input class="form-check-input" type="radio" name="typeDots" (click)="setDot('rounded')" id="rounded" checked />
         <label class="form-check-label" for="rounded">
-          <img
-            class="img-fluid"
-            src="/assets/img/dots/rounded.png"
-            alt="rounded"/>
+          <img class="img-fluid" src="/assets/img/dots/rounded.png" alt="rounded" />
         </label>
       </div>
       <div class="form-check col-3 col-lg-2">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="typeDots"
-          (click)="setDot('square')"
-          id="square" />
+        <input class="form-check-input" type="radio" name="typeDots" (click)="setDot('square')" id="square" />
         <label class="form-check-label" for="square">
-          <img
-            class="img-fluid"
-            src="/assets/img/dots/square.png"
-            alt="square"/>
+          <img class="img-fluid" src="/assets/img/dots/square.png" alt="square" />
         </label>
       </div>
 
@@ -97,11 +50,7 @@
       </div>
       <div class="col-6">
         <div class="form-check form-switch">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            [(ngModel)]="isDegrade"
-            (change)="save()"
+          <input class="form-check-input" type="checkbox" [(ngModel)]="isDegrade" (change)="save()"
             id="flexSwitchCheckDefault" />
         </div>
       </div>
@@ -109,11 +58,7 @@
       <div class="col-12" style="height: 20px;" *ngIf="isDegrade"></div>
 
       <div class="col-12" *ngIf="isDegrade">
-        <select
-          class="form-select"
-          (change)="save()"
-          [(ngModel)]="typeDegrade"
-          aria-label="Default select example">
+        <select class="form-select" (change)="save()" [(ngModel)]="typeDegrade" aria-label="Default select example">
           <option value="lineal" selected>Lineal</option>
           <option value="radial">Circular</option>
         </select>
@@ -123,13 +68,7 @@
 
       <div class="col-12" *ngIf="isDegrade">
         <label for="rotation" class="form-label">Rotación</label>
-        <input
-          type="range"
-          class="form-range"
-          (change)="save()"
-          [(ngModel)]="rotation"
-          min="0"
-          max="180"
+        <input type="range" class="form-range" (change)="save()" [(ngModel)]="rotation" min="0" max="180"
           id="rotation" />
       </div>
 
@@ -142,26 +81,14 @@
         <label for="colorPrimary" class="form-label" *ngIf="isDegrade">
           Color Inicial
         </label>
-        <input
-          type="color"
-          class="form-control form-control-color"
-          id="colorPrimary"
-          [(ngModel)]="colorP"
-          (change)="save()"
-          value="#71C608"
-          title="Elige el color principal" />
+        <input type="color" class="form-control form-control-color" id="colorPrimary" [(ngModel)]="colorP"
+          (change)="save()" value="#71C608" title="Elige el color principal" />
       </div>
 
       <div class="col-6" *ngIf="isDegrade">
         <label for="colorDegrade" class="form-label">Color Final</label>
-        <input
-          type="color"
-          class="form-control form-control-color"
-          id="colorDegrade"
-          [(ngModel)]="colorD"
-          (change)="save()"
-          value="#71C608"
-          title="Elige el color de degrade" />
+        <input type="color" class="form-control form-control-color" id="colorDegrade" [(ngModel)]="colorD"
+          (change)="save()" value="#71C608" title="Elige el color de degrade" />
       </div>
 
     </div>
