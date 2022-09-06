@@ -7,14 +7,14 @@ import { QRDataService } from "../../services/qrdata.service";
   styleUrls: ['./playstore.component.css']
 })
 export class PlaystoreComponent implements OnInit {
-  idData:string;
+  idData: string;
 
-  constructor(private dataservice:QRDataService) { }
+  constructor(private dataservice: QRDataService) { }
 
   ngOnInit(): void {
   }
 
-  save(){
+  save() {
     this.dataservice.setData(`market://details?id=${this.idData}`);
   }
 
