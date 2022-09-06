@@ -8,14 +8,14 @@ import { QRDataService } from "../../services/qrdata.service";
 })
 
 export class LinkComponent implements OnInit {
-  urlData:string;
+  urlData: string;
 
-  constructor(private dataservice:QRDataService) { }
+  constructor(private dataservice: QRDataService) { }
 
   ngOnInit(): void {
   }
 
-  save(){
+  save() {
     this.dataservice.setData(this.urlData);
   }
 
