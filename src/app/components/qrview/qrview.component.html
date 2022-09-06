@@ -1,9 +1,9 @@
 <div class="col-12 text-center qrview sticky-top">
-  <div #canvas class="col-12"></div>
+  <div #canvas class="col-12 bd-img"></div>
   <div style="height: 12px;"></div>
   <div class="d-grid gap-2">
     <button class="btn btn-primary" type="button" (click)="update()">
-      Actualizar QR
+      Actualizar QR <i class="fa fa-refresh" aria-hidden="true"></i>
     </button>
   </div>
   <div style="height: 62px;"></div>
@@ -13,31 +13,22 @@
     <div class="row">
       <div class="col-5">Tamaño de Descarga</div>
       <div class="col-3">
-        <input
-          type="number"
-          class="form-control text-center"
-          [(ngModel)]="x"/>
+        <input type="number" class="form-control text-center" [(ngModel)]="x" />
       </div>
-      <div class="col-1">x</div>
+      <div class="col-1" style="padding: 10px;">x</div>
       <div class="col-3">
-        <input
-          class="form-control text-center"
-          type="number"
-          [(ngModel)]="y"/>
+        <input class="form-control text-center" type="number" [(ngModel)]="y" />
       </div>
       <div class="col-12" style="height: 32px;"></div>
       <div class="col-8">
         <div class="d-grid gap-2">
           <button class="btn btn-primary" type="button" (click)="download()">
-            Descargar
+            Descargar <i class="fa fa-cloud-download" aria-hidden="true"></i>
           </button>
         </div>
       </div>
       <div class="col-4">
-        <select
-          class="form-select"
-          [(ngModel)]="typeFile"
-          aria-label="Tipo de Contraseña">
+        <select class="form-select" [(ngModel)]="typeFile" aria-label="Tipo de Contraseña">
           <option value="png" active>PNG</option>
           <option value="svg">SVG</option>
           <option value="webp">WEBP</option>
