@@ -1,10 +1,11 @@
-.dotconfig{
+.dotconfig {
   background: var(--site-background);
   box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius);
   padding: 20px;
 }
 
-.form-control-color{
+.form-control-color {
   border: 0px;
-  border-radius: 0px;
+  border-radius: var(--border-radius);
 }

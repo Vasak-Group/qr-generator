@@ -7,20 +7,20 @@ import { QRDataService } from "../../services/qrdata.service";
   styleUrls: ['./cornerdotconfig.component.css']
 })
 export class CornerdotconfigComponent implements OnInit {
-  isDegrade:boolean = false;
-  typeDegrade:string = "lineal";
-  colorP:string = "#71C608";
-  colorD:string = "#71C608";
-  rotation:number = 0;
-  dotType:string = "extra-rounded";
+  isDegrade: boolean = false;
+  typeDegrade: string = "lineal";
+  colorP: string = "#71C608";
+  colorD: string = "#71C608";
+  rotation: number = 0;
+  dotType: string = "extra-rounded";
 
-  constructor(private dataservice:QRDataService) { }
+  constructor(private dataservice: QRDataService) { }
 
   ngOnInit(): void {
   }
 
-  save(){
-    if(this.isDegrade){
+  save() {
+    if (this.isDegrade) {
       this.dataservice.setCornersDot(
         {
           color: this.colorP,
@@ -32,7 +32,7 @@ export class CornerdotconfigComponent implements OnInit {
           type: this.dotType
         }
       );
-    }else{
+    } else {
       this.dataservice.setCornersDot(
         {
           color: this.colorP,
@@ -43,7 +43,7 @@ export class CornerdotconfigComponent implements OnInit {
     }
   }
 
-  setDot(strDot:string):void{
+  setDot(strDot: string): void {
     this.dotType = strDot;
     this.save();
   }
