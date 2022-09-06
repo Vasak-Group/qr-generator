@@ -7,14 +7,14 @@ import { QRDataService } from "../../services/qrdata.service";
   styleUrls: ['./tel.component.css']
 })
 export class TelComponent implements OnInit {
-  telData:number;
+  telData: number;
 
-  constructor(private dataservice:QRDataService) { }
+  constructor(private dataservice: QRDataService) { }
 
   ngOnInit(): void {
   }
 
-  save(){
+  save() {
     this.dataservice.setData(`tel:${this.telData}`);
   }
 
