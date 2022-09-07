@@ -3,11 +3,10 @@
 --------------------------------------------------------------*/
 @font-face {
   font-family: ChailceNoggin;
-  src: url(/assets/fonts/ChailceNogginRegular.ttf);
+  src: url(/fonts/ChailceNogginRegular.ttf);
 }
 
 body {
-  background: rgb(240, 240, 240);
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
@@ -100,7 +99,7 @@ h6 {
   transition: all 0.4s;
 }
 
-.back-to-top i {
+.back-to-top em {
   font-size: 28px;
   color: #fff;
   line-height: 0;
@@ -137,24 +136,23 @@ h6 {
   padding: 0;
 }
 
-#topbar .contact-info i {
+#topbar .contact-info em {
   font-style: normal;
   color: #fff;
 }
 
-#topbar .contact-info i a,
-#topbar .contact-info i span {
+#topbar .contact-info em a,
+#topbar .contact-info em span {
   padding-left: 5px;
   color: #fff;
 }
 
-#topbar .contact-info i a {
+#topbar .contact-info em a {
   line-height: 0;
-  transition: 0.3s;
   transition: 0.3s;
 }
 
-#topbar .contact-info i a:hover {
+#topbar .contact-info em a:hover {
   color: #fff;
   text-decoration: underline;
 }
@@ -253,7 +251,7 @@ h6 {
 }
 
 .navbar a i,
-.navbar a:focus i {
+.navbar a:focus em {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
@@ -262,7 +260,6 @@ h6 {
 .navbar>ul>li>a:before {
   content: "";
   position: absolute;
-  width: 100%;
   height: 2px;
   bottom: -6px;
   left: 0;
@@ -310,7 +307,7 @@ h6 {
   font-weight: 400;
 }
 
-.navbar .dropdown ul a i {
+.navbar .dropdown ul a em {
   font-size: 12px;
 }
 
@@ -454,7 +451,7 @@ h6 {
   padding: 10px 20px;
 }
 
-.navbar-mobile .dropdown ul a i {
+.navbar-mobile .dropdown ul a em {
   font-size: 12px;
 }
 
@@ -541,7 +538,7 @@ h6 {
   align-items: center;
 }
 
-#hero .btn-watch-video i {
+#hero .btn-watch-video em {
   color: var(--accent-color);
   font-size: 32px;
   transition: 0.3s;
@@ -553,7 +550,7 @@ h6 {
   color: var(--accent-color);
 }
 
-#hero .btn-watch-video:hover i {
+#hero .btn-watch-video:hover em {
   color: #3b8af2;
 }
 
@@ -733,7 +730,7 @@ section {
   margin-bottom: 15px;
 }
 
-.featured-services .icon i {
+.featured-services .icon em {
   font-size: 48px;
   line-height: 1;
   color: var(--accent-color);
@@ -761,7 +758,7 @@ section {
   color: #fff;
 }
 
-.featured-services .icon-box:hover .icon i {
+.featured-services .icon-box:hover .icon em {
   color: #fff;
 }
 
@@ -788,7 +785,7 @@ section {
   margin-top: 35px;
 }
 
-.about .content ul i {
+.about .content ul em {
   background: #fff;
   box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
   font-size: 24px;
@@ -864,7 +861,7 @@ section {
   border-radius: var(--border-radius);
 }
 
-.counts .count-box i {
+.counts .count-box em {
   position: absolute;
   top: -28px;
   left: 50%;
@@ -949,7 +946,7 @@ section {
   transition: ease-in-out 0.3s;
 }
 
-.services .icon-box .icon i {
+.services .icon-box .icon em {
   color: var(--accent-color);
   font-size: 28px;
   transition: ease-in-out 0.3s;
@@ -1089,7 +1086,6 @@ section {
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio #portfolio-flters {
-  padding: 0;
   margin: 0 auto 15px auto;
   list-style: none;
   text-align: center;
@@ -1290,8 +1286,6 @@ section {
 }
 
 .team .member .social a {
-  transition: color 0.3s;
-  color: #222222;
   margin: 0 3px;
   padding-top: 7px;
   border-radius: var(--border-radius);
@@ -1309,7 +1303,7 @@ section {
   opacity: 1;
 }
 
-.team .member .social i {
+.team .member .social em {
   font-size: 18px;
 }
 
@@ -1351,7 +1345,6 @@ section {
   background: #fff;
   text-align: center;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
-  border-radius: 5px;
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
@@ -1359,7 +1352,6 @@ section {
 }
 
 .pricing .box h3 {
-  font-weight: 400;
   margin: -20px -20px 20px -20px;
   padding: 20px 15px;
   font-size: 16px;
@@ -1401,7 +1393,7 @@ section {
   padding-bottom: 16px;
 }
 
-.pricing .box ul i {
+.pricing .box ul em {
   color: var(--accent-color);
   font-size: 18px;
   padding-right: 4px;
@@ -1425,9 +1417,7 @@ section {
   padding: 8px 35px 10px 35px;
   border-radius: var(--border-radius);
   color: #fff;
-  transition: none;
   font-size: 14px;
-  font-weight: 400;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   transition: 0.3s;
@@ -1486,7 +1476,7 @@ section {
   transition: 0.3s;
 }
 
-.faq .faq-list i {
+.faq .faq-list em {
   font-size: 16px;
   position: absolute;
   left: 0;
@@ -1530,7 +1520,7 @@ section {
   padding: 20px 0 30px 0;
 }
 
-.contact .info-box i {
+.contact .info-box em {
   font-size: 32px;
   color: var(--accent-color);
   border-radius: 50%;
@@ -1660,7 +1650,6 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #fff;
   padding: 0 0 30px 0;
   color: #444444;
   font-size: 14px;
@@ -1704,7 +1693,6 @@ section {
   right: 0;
   bottom: 0;
   border: 0;
-  background: none;
   font-size: 16px;
   padding: 0 20px;
   background: var(--accent-color);
@@ -1765,7 +1753,7 @@ section {
   margin: 0;
 }
 
-#footer .footer-top .footer-links ul i {
+#footer .footer-top .footer-links ul em {
   padding-right: 2px;
   color: var(--accent-color);
   font-size: 18px;
