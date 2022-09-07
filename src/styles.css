@@ -2,8 +2,13 @@
 :root {
 	--site-blur: blur(6px);
 	--site-background: #FFFFFF;
+	--site-background-2: rgba(235, 235, 235);
 	--site-color: #71C608;
 	--site-text-color: #3A3732;
+}
+
+body {
+	background: var(--site-background-2);
 }
 
 h1,
