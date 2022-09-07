@@ -30,7 +30,7 @@ export class QrviewComponent implements OnInit {
   download(): void {
     this.dataservice.setSize(this.x, this.y);
     this.update();
-    this.qrCode.download({ name: "lynx-qr", extension: this.typeFile });
+    this.qrCode.download({ name: "vasak-qr", extension: this.typeFile });
     this.dataservice.setSize(200, 200);
     this.update();
   }
