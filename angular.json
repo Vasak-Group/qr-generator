@@ -102,5 +102,7 @@
       }
     }
   },
-  "defaultProject": "qr-generator"
+  "cli": {
+    "analytics": false
+  }
 }
