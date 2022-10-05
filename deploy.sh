@@ -8,6 +8,8 @@ npm run build
 # navigate into the build output directory
 cd dist
 
+echo 'qrgenerator.vasak.net.ar' > CNAME
+
 git init
 git add -A
 git commit -m 'deploy'
