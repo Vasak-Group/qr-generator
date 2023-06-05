@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./vsk-template/scss/style.scss";
+
+:root {
+  --site-blur: blur(6px);
+  --site-background: #ffffff;
+  --site-background-2: rgba(235, 235, 235);
+  --site-color: #71c608;
+  --site-text-color: #3a3732;
+}
+
+body {
+  background: var(--site-background-2);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  color: var(--site-color);
+}
+
+.form-control {
+  border: 0px solid #ced4da;
+  border-bottom: 2px solid var(--site-color);
+  border-radius: 0px !important;
+}
+
+.form-select {
+  border: 1px solid var(--site-color);
+  border-radius: 0px;
+}
+
+.form-check-input:checked {
+  background-color: var(--site-color);
+  border-color: var(--site-color);
+}
+
+.nav-link {
+  color: var(--site-color);
+}
+
+.btn {
+  border-radius: var(--border-radius);
+}
+
+.btn-primary,
+.btn-primary:hover {
+  background: var(--site-color);
+  border: 1px solid var(--site-color);
+}

@@ -1,23 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { QRDataService } from "../../services/qrdata.service";
+import { QRDataService } from '../../services/qrdata.service';
 
 @Component({
   selector: 'app-imageconfig',
   templateUrl: './imageconfig.component.html',
-  styleUrls: ['./imageconfig.component.css']
+  styleUrls: ['./imageconfig.component.scss'],
 })
-
 export class ImageconfigComponent implements OnInit {
   usarPropia: boolean = false;
-  imagen: string = "/assets/img/logo.svg";
+  imagen: string = '/assets/img/logo.svg';
   margin: number = 3;
   hideBack: boolean = true;
-  imagenURL: string = "";
+  imagenURL: string = '';
 
-  constructor(private dataservice: QRDataService) { }
+  constructor(private dataservice: QRDataService) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   change(strIMG: string): void {
     this.imagen = strIMG;
@@ -35,7 +33,6 @@ export class ImageconfigComponent implements OnInit {
       imageSize: 0.4,
       margin: this.margin,
       crossOrigin: 'anonymous',
-    })
+    });
   }
-
 }

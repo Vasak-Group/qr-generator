@@ -1,25 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-import { QRDataService } from "../../services/qrdata.service";
+import { QRDataService } from '../../services/qrdata.service';
 
 @Component({
   selector: 'app-wifi',
   templateUrl: './wifi.component.html',
-  styleUrls: ['./wifi.component.css']
+  styleUrls: ['./wifi.component.scss'],
 })
-
 export class WifiComponent implements OnInit {
-  name: string = "";
-  pass: string = "";
+  name: string = '';
+  pass: string = '';
   isHidden: boolean = false;
-  typePass: string = "nopass";
+  typePass: string = 'nopass';
 
-  constructor(private dataservice: QRDataService) { }
+  constructor(private dataservice: QRDataService) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   save() {
-    this.dataservice.setData(`WIFI:T:${this.typePass};S:${this.name};P:${this.pass};H:${this.isHidden.toString()};;`)
+    this.dataservice.setData(
+      `WIFI:T:${this.typePass};S:${this.name};P:${
+        this.pass
+      };H:${this.isHidden.toString()};;`
+    );
   }
-
 }
