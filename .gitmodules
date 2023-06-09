@@ -1,0 +1,3 @@
+[submodule "src/assets/vsk-template"]
+	path = src/assets/vsk-template
+	url = git@github.com:Vasak-Group/vsk-template.git

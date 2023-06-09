@@ -9,13 +9,13 @@
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
   border-color: var(--site-color) var(--site-color) #fff;
-  border-top-left-radius: var(--border-radius);
-  border-top-right-radius: var(--border-radius);
+  border-top-left-radius: var(--site-radius);
+  border-top-right-radius: var(--site-radius);
 }
 
 .qrdata {
-  background: var(--site-background);
+  background: var(--bg-site-2);
   box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
-  border-radius: var(--border-radius);
+  border-radius: var(--site-radius);
   padding: 20px;
 }
