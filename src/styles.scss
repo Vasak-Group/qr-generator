@@ -3,11 +3,12 @@
 
 :root {
   --site-blur: blur(6px);
-  --site-background: #ffffff;
-  --site-background-2: rgba(235, 235, 235);
   --site-color: #71c608;
   --site-color-2: #01841d;
-  --site-text-color: #3a3732;
+}
+
+body {
+  background: var(--bg-site);
 }
 
 h1,

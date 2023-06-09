@@ -1,5 +1,5 @@
 .qrview {
-  top: 75px;
+  top: 150px;
 }
 
 .form-control {
@@ -7,11 +7,11 @@
 }
 
 .form-control {
-  border-radius: var(--border-radius) !important;
+  border-radius: var(--site-radius) !important;
   padding: 10px;
 }
 
 .form-select,
 .bd-img {
-  border-radius: var(--border-radius) !important;
+  border-radius: var(--site-radius) !important;
 }
