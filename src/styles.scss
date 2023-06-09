@@ -6,11 +6,8 @@
   --site-background: #ffffff;
   --site-background-2: rgba(235, 235, 235);
   --site-color: #71c608;
+  --site-color-2: #01841d;
   --site-text-color: #3a3732;
-}
-
-body {
-  background: var(--site-background-2);
 }
 
 h1,
@@ -24,14 +21,13 @@ a {
 }
 
 .form-control {
-  border: 0px solid #ced4da;
+  border: 0px;
   border-bottom: 2px solid var(--site-color);
-  border-radius: 0px !important;
 }
 
 .form-select {
   border: 1px solid var(--site-color);
-  border-radius: 0px;
+  border-radius: var(--site-radius);
 }
 
 .form-check-input:checked {
@@ -44,11 +40,11 @@ a {
 }
 
 .btn {
-  border-radius: var(--border-radius);
+  border-radius: var(--site-radius);
 }
 
 .btn-primary,
 .btn-primary:hover {
-  background: var(--site-color);
-  border: 1px solid var(--site-color);
+  background: var(--site-gradient);
+  border: 0px;
 }
