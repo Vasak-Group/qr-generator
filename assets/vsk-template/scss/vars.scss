@@ -1,0 +1,43 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/fira_code.min.css);
+
+:root {
+	--bg-site-g: #eff2f9;
+	--bg-site: #ddd;
+	--bg-site-2: #fff;
+	--bg-site-3: rgba(106, 124, 146, 0.1);
+
+	--a-color-2: #6a7c92;
+
+	--text-color: rgba(106, 124, 146, 0.55);
+	--text-title: #051441;
+
+	--site-color: #03a9f4;
+	--site-color-2: #6f58e8;
+	--site-gradient: linear-gradient(
+		30deg,
+		var(--site-color) 0%,
+		var(--site-color-2) 60%
+	);
+
+	--site-radius: 10px;
+
+	--code-font-family: 'Fira Code', monospace;
+
+	&[data-scheme='dark'] {
+		--bg-site-g: #333;
+		--bg-site: #222;
+		--bg-site-2: #111;
+		--bg-site-3: rgba(80, 80, 80, 0.1);
+
+		--a-color-2: #6a7c92;
+
+		--text-color: rgba(240, 240, 240, 0.55);
+		--text-title: #999;
+	}
+}
+
+@import './highlight/light.scss';
+
+[data-scheme='dark'] {
+	@import './highlight/dark.scss';
+}

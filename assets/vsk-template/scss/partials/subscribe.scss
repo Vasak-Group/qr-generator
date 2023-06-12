@@ -1,0 +1,55 @@
+.subscribe-section {
+	position: relative;
+
+	a {
+		border-radius: 50px;
+		color: #fff;
+		font-size: 18px;
+		font-weight: 700;
+		border: none;
+		background: var(--site-gradient);
+		background-size: 200%;
+		transition: all 0.3s ease-out 0s;
+		padding: 30px 120px;
+		top: 5px;
+		right: 5px;
+	}
+
+	.subscribe-form {
+		position: relative;
+
+		input {
+			border: 2px solid transparent;
+			border-radius: 50px;
+			width: 100%;
+			font-size: 16px;
+			padding: 18px 30px;
+			background: var(--bg-site-g);
+			transition: all 0.3s ease-out 0s;
+
+			&:focus {
+				box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+			}
+		}
+
+		button {
+			border-radius: 50px;
+			color: #fff;
+			font-size: 18px;
+			font-weight: 700;
+			border: none;
+			background: var(--site-gradient);
+			background-size: 200%;
+			transition: all 0.3s ease-out 0s;
+			position: absolute;
+			height: 54px;
+			width: 54px;
+			top: 5px;
+			right: 5px;
+
+			&:hover {
+				background-position: right center;
+			}
+		}
+	}
+}

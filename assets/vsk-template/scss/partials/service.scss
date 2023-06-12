@@ -1,0 +1,42 @@
+.service-section .service-box-style-2 {
+	padding: 0;
+	text-align: center;
+
+	.service-thumbnail img {
+		width: 100%;
+		border-radius: 10px 10px 0 0;
+	}
+	.box-icon-style {
+		margin-left: auto;
+		margin-right: auto;
+		width: 54px;
+		height: 54px;
+		border: 2px solid #fff;
+		font-size: 25px;
+		margin-top: -27px;
+		background: var(--bg-site-g);
+		position: relative;
+		z-index: 9;
+
+		i {
+			color: transparent;
+			-webkit-background-clip: text;
+			-ms-background-clip: text;
+			background-clip: text;
+			background-image: var(--site-gradient);
+			transition: all 0.3s ease-out 0s;
+		}
+	}
+
+	&:hover .box-icon-style {
+		background: var(--site-gradient);
+
+		i {
+			color: #fff;
+		}
+	}
+
+	.box-content-style {
+		padding: 0 30px 35px;
+	}
+}

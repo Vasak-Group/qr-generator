@@ -1,0 +1,21 @@
+#dark-mode-toggle {
+	gap: 10px;
+
+	svg {
+		height: 40px;
+		margin-left: 50px;
+	}
+	.icon-tabler-toggle-right {
+		display: none;
+	}
+}
+
+[data-scheme='dark'] {
+	.icon-tabler-toggle-right {
+		display: block !important;
+	}
+
+	.icon-tabler-toggle-left {
+		display: none;
+	}
+}
