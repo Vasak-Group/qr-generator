@@ -145,13 +145,13 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="max-w-7xl mx-auto p-6">
+  <div class="mx-24 p-6">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
       <!-- Left Panel: Content & Customization -->
       <div class="lg:col-span-2 space-y-6">
         <!-- Content Type Selection -->
-        <div class="bg-slate-200 dark:bg-slate-900 rounded-2xl shadow-xl p-6">
-          <h2 class="text-2xl font-bold mb-4">Tipo de Contenido</h2>
+        <div class="bg-slate-200 dark:bg-slate-900 rounded-xl p-6">
+          <h2 class="text-2xl font-bold mb-4 text-primary">Tipo de Contenido</h2>
           <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
             <button
               v-for="type in [
@@ -165,9 +165,9 @@ onMounted(() => {
               :key="type.value"
               @click="contentType = type.value as ContentType"
               :class="[
-                'px-4 py-2 rounded-lg font-medium transition-all',
+                'px-4 py-2 rounded-xl font-medium transition-all',
                 contentType === type.value
-                  ? 'bg-gradient-to-r from-primary to-secondary text-white shadow-lg'
+                  ? 'bg-gradient-to-r from-primary to-secondary text-white'
                   : 'bg-slate-100 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700'
               ]"
             >
@@ -183,7 +183,7 @@ onMounted(() => {
               <input 
                 v-model="urlData" 
                 type="url" 
-                class="w-full px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                class="w-full px-4 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                 placeholder="https://ejemplo.com"
               >
             </div>
@@ -192,15 +192,15 @@ onMounted(() => {
             <div v-if="contentType === 'wifi'" class="space-y-3">
               <div>
                 <label class="block text-sm font-medium mb-2">SSID (Nombre de Red)</label>
-                <input v-model="wifiSSID" type="text" class="w-full px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" placeholder="Mi WiFi">
+                <input v-model="wifiSSID" type="text" class="w-full px-4 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" placeholder="Mi WiFi">
               </div>
               <div>
                 <label class="block text-sm font-medium mb-2">Contraseña</label>
-                <input v-model="wifiPassword" type="text" class="w-full px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" placeholder="contraseña123">
+                <input v-model="wifiPassword" type="text" class="w-full px-4 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" placeholder="contraseña123">
               </div>
               <div>
                 <label class="block text-sm font-medium mb-2">Encriptación</label>
-                <select v-model="wifiEncryption" class="w-full px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none">
+                <select v-model="wifiEncryption" class="w-full px-4 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none">
                   <option value="WPA">WPA/WPA2</option>
                   <option value="WEP">WEP</option>
                   <option value="nopass">Sin Contraseña</option>
@@ -211,53 +211,53 @@ onMounted(() => {
             <!-- PlayStore -->
             <div v-if="contentType === 'playstore'">
               <label class="block text-sm font-medium mb-2">ID de la App</label>
-              <input v-model="playstoreId" type="text" class="w-full px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" placeholder="com.ejemplo.app">
+              <input v-model="playstoreId" type="text" class="w-full px-4 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" placeholder="com.ejemplo.app">
             </div>
 
             <!-- SMS -->
             <div v-if="contentType === 'sms'" class="space-y-3">
               <div>
                 <label class="block text-sm font-medium mb-2">Número</label>
-                <input v-model="smsNumber" type="tel" class="w-full px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" placeholder="+54 9 11 1234-5678">
+                <input v-model="smsNumber" type="tel" class="w-full px-4 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" placeholder="+54 9 11 1234-5678">
               </div>
               <div>
                 <label class="block text-sm font-medium mb-2">Mensaje</label>
-                <textarea v-model="smsMessage" class="w-full px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" rows="3" placeholder="Hola!"></textarea>
+                <textarea v-model="smsMessage" class="w-full px-4 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" rows="3" placeholder="Hola!"></textarea>
               </div>
             </div>
 
             <!-- Phone -->
             <div v-if="contentType === 'phone'">
               <label class="block text-sm font-medium mb-2">Número de Teléfono</label>
-              <input v-model="phoneNumber" type="tel" class="w-full px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" placeholder="+54 9 11 1234-5678">
+              <input v-model="phoneNumber" type="tel" class="w-full px-4 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" placeholder="+54 9 11 1234-5678">
             </div>
 
             <!-- Email -->
             <div v-if="contentType === 'email'" class="space-y-3">
               <div>
                 <label class="block text-sm font-medium mb-2">Dirección de Email</label>
-                <input v-model="emailAddress" type="email" class="w-full px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" placeholder="ejemplo@email.com">
+                <input v-model="emailAddress" type="email" class="w-full px-4 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" placeholder="ejemplo@email.com">
               </div>
               <div>
                 <label class="block text-sm font-medium mb-2">Asunto</label>
-                <input v-model="emailSubject" type="text" class="w-full px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" placeholder="Asunto del email">
+                <input v-model="emailSubject" type="text" class="w-full px-4 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" placeholder="Asunto del email">
               </div>
               <div>
                 <label class="block text-sm font-medium mb-2">Mensaje</label>
-                <textarea v-model="emailBody" class="w-full px-4 py-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" rows="3" placeholder="Cuerpo del mensaje"></textarea>
+                <textarea v-model="emailBody" class="w-full px-4 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none" rows="3" placeholder="Cuerpo del mensaje"></textarea>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Customization Options -->
-        <div class="bg-slate-200 dark:bg-slate-900 rounded-2xl shadow-xl p-6">
-          <h2 class="text-2xl font-bold mb-4">Personalización</h2>
+        <div class="bg-slate-200 dark:bg-slate-900 rounded-xl shadow-xl p-6">
+          <h2 class="text-2xl font-bold mb-4 text-primary">Personalización</h2>
           
           <div class="space-y-6">
             <!-- Colors -->
             <div>
-              <h3 class="text-lg font-semibold mb-3">Colores</h3>
+              <h3 class="text-lg font-semibold mb-3 text-secondary">Colores</h3>
               <div class="grid grid-cols-2 gap-4">
                 <div>
                   <label class="block text-sm font-medium mb-2">Color Puntos</label>
@@ -292,11 +292,11 @@ onMounted(() => {
 
             <!-- Styles -->
             <div>
-              <h3 class="text-lg font-semibold mb-3">Estilos</h3>
+              <h3 class="text-lg font-semibold mb-3 text-secondary">Estilos</h3>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label class="block text-sm font-medium mb-2">Estilo Puntos</label>
-                  <select v-model="options.dotsOptions.type" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none">
+                  <select v-model="options.dotsOptions.type" class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none">
                     <option value="rounded">Redondeado</option>
                     <option value="dots">Puntos</option>
                     <option value="classy">Classy</option>
@@ -307,7 +307,7 @@ onMounted(() => {
                 </div>
                 <div>
                   <label class="block text-sm font-medium mb-2">Estilo Esquinas</label>
-                  <select v-model="options.cornersSquareOptions.type" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none">
+                  <select v-model="options.cornersSquareOptions.type" class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none">
                     <option value="extra-rounded">Redondeado</option>
                     <option value="square">Cuadrado</option>
                     <option value="dot">Punto</option>
@@ -315,7 +315,7 @@ onMounted(() => {
                 </div>
                 <div>
                   <label class="block text-sm font-medium mb-2">Estilo Puntos Esquinas</label>
-                  <select v-model="options.cornersDotOptions.type" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none">
+                  <select v-model="options.cornersDotOptions.type" class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none">
                     <option value="dot">Punto</option>
                     <option value="square">Cuadrado</option>
                   </select>
@@ -325,7 +325,7 @@ onMounted(() => {
 
             <!-- Logo/Image -->
             <div>
-              <h3 class="text-lg font-semibold mb-3">Logo / Imagen</h3>
+              <h3 class="text-lg font-semibold mb-3 text-secondary">Logo / Imagen</h3>
               <div class="space-y-3">
                 <div class="flex items-center gap-3">
                   <input 
@@ -349,7 +349,7 @@ onMounted(() => {
                       >
                     </label>
                   </div>
-                  <div v-else class="flex items-center justify-between p-3 bg-slate-100 dark:bg-slate-800 rounded-lg">
+                  <div v-else class="flex items-center justify-between p-3 bg-slate-100 dark:bg-slate-800 rounded-xl">
                     <span class="text-sm">{{ imageFile.name }}</span>
                     <button @click="removeImage" class="text-red-500 hover:text-red-700">
                       <FontAwesomeIcon icon="trash" />
@@ -386,20 +386,20 @@ onMounted(() => {
       <!-- Right Panel: Preview & Download -->
       <div class="space-y-6">
         <!-- Preview -->
-        <div class="bg-slate-200 dark:bg-slate-900 rounded-2xl shadow-xl p-6">
+        <div class="bg-slate-200 dark:bg-slate-900 rounded-xl shadow-xl p-6">
           <h2 class="text-2xl font-bold mb-4">Vista Previa</h2>
           <div class="flex flex-col items-center justify-center bg-slate-100 dark:bg-slate-800/50 rounded-xl p-6">
-            <div class="bg-white p-4 rounded-xl shadow-lg mb-4" ref="qrContainer"></div>
+            <div class="bg-white p-4 rounded-xl mb-4" ref="qrContainer"></div>
           </div>
         </div>
 
         <!-- Download Options -->
-        <div class="bg-slate-200 dark:bg-slate-900 rounded-2xl shadow-xl p-6">
+        <div class="bg-slate-200 dark:bg-slate-900 rounded-xl shadow-xl p-6">
           <h2 class="text-2xl font-bold mb-4">Descargar</h2>
           <div class="space-y-4">
             <div>
               <label class="block text-sm font-medium mb-2">Formato</label>
-              <select v-model="downloadFormat" class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none">
+              <select v-model="downloadFormat" class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none">
                 <option value="png">PNG</option>
                 <option value="svg">SVG</option>
                 <option value="jpeg">JPEG</option>
@@ -415,7 +415,7 @@ onMounted(() => {
                   type="number" 
                   min="100" 
                   max="5000"
-                  class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none"
+                  class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none"
                 >
               </div>
               <div>
@@ -425,14 +425,14 @@ onMounted(() => {
                   type="number" 
                   min="100" 
                   max="5000"
-                  class="w-full px-3 py-2 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none"
+                  class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary outline-none"
                 >
               </div>
             </div>
 
             <button 
               @click="downloadQR"
-              class="w-full px-6 py-3 rounded-full font-bold text-white bg-gradient-to-r from-primary to-secondary hover:shadow-lg hover:scale-105 transition-all duration-300 active:scale-95 flex items-center justify-center gap-2"
+              class="w-full px-6 py-3 rounded-full font-bold text-white bg-gradient-to-r from-primary to-secondary hover hover:scale-105 transition-all duration-300 active:scale-95 flex items-center justify-center gap-2"
             >
               <FontAwesomeIcon icon="download" />
               Descargar QR
