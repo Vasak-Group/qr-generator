@@ -1,12 +1,14 @@
-import { enableProdMode } from '@angular/core';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import './assets/main.css'
 
-import { AppModule } from './app/app.module';
-import { environment } from './environments/environment';
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
 
-if (environment.production) {
-  enableProdMode();
-}
+import App from './App.vue'
+import router from './router'
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
+const app = createApp(App)
+
+app.use(createPinia())
+app.use(router)
+
+app.mount('#app')
