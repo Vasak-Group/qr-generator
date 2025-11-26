@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-primary: #F6BB31;
   --color-secondary: #F46619;
@@ -7,5 +9,5 @@
 }
 
 body {
-  @apply bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100 font-sans;
+  @apply bg-slate-100 text-slate-950 dark:bg-slate-950 dark:text-slate-50 transition-all duration-300 font-sans;
 }
