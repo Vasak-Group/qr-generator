@@ -21,7 +21,7 @@ const cycleTheme = () => {
   const themes: Theme[] = ['light', 'dark', 'system']
   const currentIndex = themes.indexOf(currentTheme.value)
   const nextIndex = (currentIndex + 1) % themes.length
-  currentTheme.value = themes[nextIndex]
+  currentTheme.value = themes[nextIndex] as Theme
   
   localStorage.setItem('theme', currentTheme.value)
   applyTheme(currentTheme.value)
