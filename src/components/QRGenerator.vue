@@ -387,15 +387,15 @@ onMounted(() => {
       <div class="space-y-6">
         <!-- Preview -->
         <div class="bg-slate-200 dark:bg-slate-900 rounded-xl shadow-xl p-6">
-          <h2 class="text-2xl font-bold mb-4">Vista Previa</h2>
-          <div class="flex flex-col items-center justify-center bg-slate-100 dark:bg-slate-800/50 rounded-xl p-6">
+          <h2 class="text-2xl font-bold mb-4 text-primary">Vista Previa</h2>
+          <div class="flex flex-col items-center justify-center rounded-xl p-6">
             <div class="bg-white p-4 rounded-xl mb-4" ref="qrContainer"></div>
           </div>
         </div>
 
         <!-- Download Options -->
         <div class="bg-slate-200 dark:bg-slate-900 rounded-xl shadow-xl p-6">
-          <h2 class="text-2xl font-bold mb-4">Descargar</h2>
+          <h2 class="text-2xl font-bold mb-4 text-primary">Descargar</h2>
           <div class="space-y-4">
             <div>
               <label class="block text-sm font-medium mb-2">Formato</label>
